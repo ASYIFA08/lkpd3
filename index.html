@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3f2020;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #dfc6aa;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  width: 70%;
+  background-color: #fcf5d8;
+  height: 600px; /* only for demonstration, should be removed */
+}
+article image {
+  float: right;
+    width: 200px; 
+    height: 80px;
+}
+article .left {
+    float: left;
+    padding: 100px 50px 10px;
+    width: 60%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+ }
+
+ table ,th,td {
+  border: 1px solid;
+ }
+
+ th,td {
+  padding: 10px;
+  text-align: left;
+  color:black ;
+ }
+
+ thead {
+  background-color:#dfc6aa; ;
+  color: wheat;
+ }
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+ tbody tr:nth-child(ood){
+  background-color: #def5d8;
+ }
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  position: fixed
+  
+  
+  
+    
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- <h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p> -->
+
+<header>
+  <h2>MAKANAN KHAS JAWA TENGAH</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://kumparan.com/ragam-info/pengertian-makanan-khas-daerah-dan-karakteristiknya-yang-khas-21HydGRFE7R/3">1. Pengertian</a></li>
+      <li><a href="https://kids.grid.id/read/473780913/begini-awal-mula-makanan-khas-jawa-tengah-punya-cita-rasa-yang-manis?page=all">2. Sejarah Makanan Khas Jawa</a></li>
+      <li><a href="https://www.cimbniaga.co.id/id/inspirasi/gayahidup/makanan-khas-jawa-tengah">3. Macam Macam Makanan Khas Jawa</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <div class="right">
+      <h1>Makanan Khas</h1>
+      <p>Makanan khas daerah adalah jenis makanan atau hidangan yang berasal dari suatu daerah tertentu yang biasa di konsumsi di suatu daerah dan cocok dengan lidah masyarakat setempat. Makanan Jawa Tengah memiliki ciri khas autentik dengan cita rasa yang lezat. Bumbu-bumbu yang digunakan memiliki rasa yang unik yakni cenderung manis</p>
+      <img src="foto (2).jpeg" alt="makanan" style="float:right; width:40%; height:auto;">
+    </div>
+     
+      </article>
+
+    
+   
+
+    
+</section>
+<table>
+  <thead>
+      <tr>
+          <th>Nomor</th>
+          <th>Jenis Makanan</th>
+          <td>Asal Daerah</td>
+     </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td>1</td>
+      <td>Lumpia</td>
+      <td>Semarang</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>Getuk</td>
+         <td>Magelang</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Nasi Ponggol</td>
+          <td>Tegal</td>
+      </tr>
+  </tbody>
+  
+  
+
+<footer>
+  <small>Copyright &copy; All Rights Reserved.</small>
+</footer>
+
+</body>
+</html>
+
